@@ -10,6 +10,9 @@ class MockPdfToolPlatform
 
   @override
   Future<String?> getPlatformVersion() => Future.value('42');
+
+  @override
+  Future<String?> mergePDFDocuments(List<String> listOfPaths) => Future.value('fake_document.pdf');
 }
 
 void main() {
@@ -25,5 +28,13 @@ void main() {
     PdfToolPlatform.instance = fakePlatform;
 
     expect(await pdfToolPlugin.getPlatformVersion(), '42');
+  });
+
+  test('mergePDFDocuments', () async {
+    PdfTool pdfToolPlugin = PdfTool();
+    MockPdfToolPlatform fakePlatform = MockPdfToolPlatform();
+    PdfToolPlatform.instance = fakePlatform;
+
+    expect(await pdfToolPlugin.mergePDFDocuments(['example1.pdf', 'example2.pdf']), 'fake_document.pdf');
   });
 }
