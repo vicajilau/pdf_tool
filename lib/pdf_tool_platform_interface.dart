@@ -26,4 +26,8 @@ abstract class PdfToolPlatform extends PlatformInterface {
   Future<String?> getPlatformVersion() {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
+
+  Future<String?> mergePDFDocuments(List<String> listOfPaths) {
+    throw UnimplementedError('platformVersion() has not been implemented.');
+  }
 }
