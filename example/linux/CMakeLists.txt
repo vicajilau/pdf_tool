@@ -7,7 +7,7 @@ project(runner LANGUAGES CXX)
 set(BINARY_NAME "pdf_tool_example")
 # The unique GTK application identifier for this application. See:
 # https://wiki.gnome.org/HowDoI/ChooseApplicationID
-set(APPLICATION_ID "es.victorcarreras.pdf_tool")
+set(APPLICATION_ID "com.example.pdf_tool")
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.
@@ -86,8 +86,6 @@ set_target_properties(${BINARY_NAME}
   RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/intermediates_do_not_run"
 )
 
-# Enable the test target.
-set(include_pdf_tool_tests TRUE)
 
 # Generated plugin build rules, which manage building the plugins and adding
 # them to the application.
