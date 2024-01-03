@@ -1,6 +1,6 @@
-# pdf_tool Flutter Plugin
+# pdf_toolkit Flutter Plugin
 
-pdf_tool is a Flutter plugin that provides low-level PDF document manipulation capabilities using Foreign Function Interface (FFI) and third-party C libraries. This plugin allows developers to perform various operations on PDF documents, such as merging, splitting, and extracting pages.
+pdf_toolkit is a Flutter plugin that provides low-level PDF document manipulation capabilities using Foreign Function Interface (FFI) and third-party C libraries. This plugin allows developers to perform various operations on PDF documents, such as merging, splitting, and extracting pages.
 
 ## Features
 
@@ -11,11 +11,11 @@ pdf_tool is a Flutter plugin that provides low-level PDF document manipulation c
 
 ## Getting Started
 
-To use pdf_tool in your Flutter project, add it to your `pubspec.yaml` file:
+To use pdf_toolkit in your Flutter project, add it to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  pdf_tool: ^1.0.0
+  pdf_toolkit: ^1.0.0
 ```
 
 Then, run:
@@ -42,7 +42,7 @@ For iOS, you may need to add the following entry to your Info.plist file to enab
 ### Import the Package
 
 ```dart
-import 'package:pdf_tool/pdf_tool.dart';
+import 'package:pdf_toolkit/pdf_toolkit.dart';
 ```
 
 ### Example: Merge PDFs
@@ -111,4 +111,4 @@ This plugin is released under the [MIT License](LICENSE).
 
 ---
 
-Feel free to customize this README according to the specific details and features of your pdf_tool Flutter plugin. Update the version numbers, usage examples, and API reference as needed.
+Feel free to customize this README according to the specific details and features of your pdf_toolkit Flutter plugin. Update the version numbers, usage examples, and API reference as needed.
